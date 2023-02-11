@@ -5,7 +5,14 @@ description = "A pytorch implementation of SDF and NeRF with instant ngp"
 authors = ["ashawkey"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "torch_ngp"}]
+packages = [
+  {include = "ffmlp"},
+  {include = "freqencoder"},
+  {include = "gridencoder"},
+  {include = "raymarching"},
+  {include = "shencoder"},
+  {include = "torch_ngp"}
+]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.12"
